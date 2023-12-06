@@ -1,0 +1,2 @@
+# name of people who never order:-
+select newschema_zom.zs_user.name from newschema_zom.zs_user  where newschema_zom.zs_user.user_id not in (select newschema_zom.zs_orders.user_id from newschema_zom.zs_orders)
